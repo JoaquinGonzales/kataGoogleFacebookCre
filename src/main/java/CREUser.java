@@ -23,9 +23,9 @@ class UserData {
         this.payment = payment;
     }
 
-    public String paymentInfo()
+    @Override
+    public String toString()
     {
-        String result = "this employee "+ name +" Will be payed " + String.valueOf(payment) +" Bs.";
-        return result;
+        return String.format("this employee : %s, Will be payed: %s Bs.", this.name, this.payment);
     }
 }

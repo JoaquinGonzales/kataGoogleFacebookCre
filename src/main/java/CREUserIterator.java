@@ -17,6 +17,6 @@ public class CREUserIterator implements Iterator {
 
     @Override
     public String currentItem() {
-        return String.valueOf(iterator.get(++position).paymentInfo());
+        return String.valueOf(iterator.get(++position).toString());
     }
 }
